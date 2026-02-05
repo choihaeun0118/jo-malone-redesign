@@ -51,7 +51,7 @@ input[type="search"]{
     padding-right: 0px;
 }
 input[type="submit"]{
-    background: url('/images/01heder/serch_대지\ 1.png')no-repeat center/23px;
+    background: url('../images/01heder/serch_대지\ 1.png')no-repeat center/23px;
     width: 22px;
     height: 23px;
     margin-right: 5px;
@@ -60,7 +60,7 @@ input[type="submit"]{
     cursor: pointer;
 }
 .hader-inner .logo{
-    background: url('/images/01heder/logo.png')no-repeat center/164px;
+    background: url('../images/01heder/logo.png')no-repeat center/164px;
     text-indent: -99999px;
     text-align: center;
     width: 164px;
@@ -180,7 +180,7 @@ header {
     transform: translate(-50%, -50%);
     width: 120px;
     height: 32px;
-    background: url('/images/01heder/logo.wh.png') no-repeat center/contain;
+    background: url('../images/01heder/logo.wh.png') no-repeat center/contain;
     text-indent: -9999px;
 }
 .btn-hamburger {
@@ -191,7 +191,7 @@ header {
     transform: translateY(-50%);
     width: 24px;
     height: 18px;
-    background: url('/images/01heder/menu.svg') no-repeat center/contain;
+    background: url('../images/01heder/menu.svg') no-repeat center/contain;
     border: none;
     cursor: pointer;
 }
@@ -420,14 +420,14 @@ Mobile Header Login Icon
 .best-item .prev{
     width:14px;
     height:22px;
-    background:url('/images/03best-item/prev.png') no-repeat center/contain;
+    background:url('../images/03best-item/prev.png') no-repeat center/contain;
     text-indent:-99999px;
 }
 
 .best-item .next{
     width:14px;
     height:22px;
-    background:url('/images/03best-item/next.png') no-repeat center/contain;
+    background:url('../images/03best-item/next.png') no-repeat center/contain;
     text-indent:-99999px;
 }
 
@@ -877,7 +877,7 @@ height:4px;
 }
 
 .product-items.prev{
-    background:url('/images/03best-item/prev.png') no-repeat center/cover;
+    background:url('../images/03best-item/prev.png') no-repeat center/cover;
     width:14px;
     height:22px;
     text-indent:-99999px;
@@ -885,7 +885,7 @@ height:4px;
 }
 
 .product-items .next{
-    background:url('/images/03best-item/next.png') no-repeat center/cover;
+    background:url('../images/03best-item/next.png') no-repeat center/cover;
     width:14px;
     height:22px;
     text-indent:-99999px;
