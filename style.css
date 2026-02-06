@@ -1672,7 +1672,7 @@ body {
  ====================== */
 
 .best-item .swiper-slide img {
-  margin-left: 40px; /* 오른쪽 여유 공간 추가 */
+  margin-left: 60px; /* 오른쪽 여유 공간 추가 */
 }
 
 @media (max-width: 768px) {
