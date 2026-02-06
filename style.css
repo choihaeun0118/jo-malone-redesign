@@ -1667,3 +1667,100 @@ body {
 .season-collection .text{
   text-align:center;
 }
+/* =====================
+ BEST ITEM 이미지 오른쪽 이동
+ ====================== */
+
+.best-item .swiper-slide img {
+  margin-left: 40px; /* 오른쪽 여유 공간 추가 */
+}
+
+@media (max-width: 768px) {
+  .best-item .swiper-slide img {
+    margin-left: 0; /* 모바일에서는 중앙 정렬 유지 */
+  }
+}
+
+@media (max-width: 768px) {
+  footer .part2 {
+    display: none;
+  }
+}
+/* =====================
+Footer part2
+===================== */
+
+footer.part2 {
+  background-color: #FFFEF2;
+  padding: 80px 40px;
+}
+
+footer.part2 .inner {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: stretch;
+  column-gap: 80px;
+}
+
+/* ---------- LEFT : COMPANY INFO ---------- */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.introduce {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* ---------- RIGHT : POLICY + LOGO (2단) ---------- */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* ← 이게 핵심 */
+  align-items: flex-end;
+}
+
+/* policy (위) */
+.footer-policy {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-policy a {
+  font-size: 14px;
+  color: #292929;
+}
+
+.footer-policy span {
+  border-bottom: 1px solid #292929;
+  padding-bottom: 2px;
+  white-space: nowrap;
+}
+
+/* logo (아래) */
+.footer-logo img {
+  width: 110px;   /* 크기 줄임 */
+  height: auto;
+  opacity: 0.85;
+}
+
+/* =====================
+Mobile – part2 숨김
+===================== */
+@media (max-width: 768px) {
+  footer.part2 {
+    display: none;
+  }
+}
