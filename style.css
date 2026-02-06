@@ -620,12 +620,14 @@ Mobile Header Login Icon
 }
 
 .season-collection .season-inner{
-    width:1400px;
-    text-align: center;
+    max-width:1400px;
+    width:100%;
     margin:0 auto;
+    padding:0 40px;
+    box-sizing:border-box;
     position:relative;
-    margin-right: 15%;
 }
+
 
 .season-slide > a.season-link {
     display: flex;         
@@ -666,10 +668,11 @@ Mobile Header Login Icon
 }
 
 .season-collection .left img{
-    width:100%;
     max-width:680px;
-    margin-left:100px;
+    width:100%;
+    height:auto;
 }
+
 
 /* right content */
 .season-collection .right{
@@ -685,11 +688,10 @@ Mobile Header Login Icon
 
 /* text */
 .season-collection .text{
-    padding-top:80px;
-    position: absolute;
-    text-align: center;
-    bottom: 78%;
+    text-align:center;
+    margin-bottom:24px;
 }
+
 
 .season-collection h2{
     font-size:32px;
@@ -755,11 +757,10 @@ height:auto;
 /* 왼쪽 이미지 */
 .season-collection .left{
 width:100%;
-margin-left: 0px;
+
 }
 
 .season-collection .left img{
-    margin-left:0;
     max-width:80%;
 }
 
@@ -1174,95 +1175,91 @@ section.Jomalone-service{
 }
 }
 
-/* Footer - part1 */
-Footer.part1{
-    width: 100%;
-    background-color: #FFFEF2;
-    height: 900px;
-    position: relative;
-    display: flex;
-    gap: 70px;
-}
-.part1 .logo{
-    width: 347px;
-    position: absolute;
-    left: 22%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-footer.part1 ul .title{
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 50px;
-}
-footer.part1 ul li{
-    font-size: 16px;
-    padding-bottom: 40px;
-}
-footer.part1 ul{
-    position: relative;
-    right: -50%;
-    top: 10%;
-}
-footer.part1 .icon li{
-    display: flex;
-}
-footer.part1 .icon li img{
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
-footer.part1 .logo {
-    width: auto;
-    height: auto;
-}
-footer.part1 .logo img {
-    width: 240px;     
-    height: auto;
-    display: block;
+/* =====================
+PC FOOTER (RESTORE)
+===================== */
+
+footer {
+  background-color: #FFFEF2;
+
+
 }
 
-/* Footer - part2 */
-Footer.part2{
-    background-color: #FFFEF2;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 100px;
+/* -------- part1 -------- */
+footer .part1 {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 140px 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+background: transparent; 
 }
-Footer.part2 .inner{
-    display: block;
-    width: 1708px;
-    height: 275px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+
+.part1 .logo img {
+  width: 240px;
 }
-.inner .p2{
-    position: relative;
-    left: 690px;
+
+.part1 ul {
+  list-style: none;
 }
-.introduce{
-    position: relative;
-    right:59%;
-    top: 30%;
+
+.part1 ul .title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
 }
-Footer.part2 .inner img{
-    width: 233px;
-    height: 125px;
-    position: relative;
-    left:-5%;
-    top: 30%;
+
+.part1 ul li {
+  font-size: 15px;
+  margin-bottom: 18px;
 }
-.inner span{
-    border-bottom: 1px solid #000;
+
+.part1 .icon li {
+  display: flex;
+  align-items: center;
 }
-.inner .p1{
-    position: relative;
-    left: -50px;
+
+.part1 .icon img {
+  width: 22px;
+  margin-right: 10px;
 }
+
+/* -------- part2 -------- */
+.part2 {
+  border-top: 1px solid #ddd;
+  padding: 60px 40px 80px;
+}
+
+.part2 .inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.part2 .p1,
+.part2 .p2 {
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.part2 .p2 span {
+  margin-right: 16px;
+  border-bottom: 1px solid #000;
+}
+
+.part2 .footer-logo img {
+  width: 220px;
+}
+@media (max-width:768px){
+  footer .part1,
+  footer .part2{
+    display:none !important;
+  }
+}
+
 
 /* =====================
 MOBILE FOOTER
@@ -1357,13 +1354,7 @@ MOBILE FOOTER
 /* =====================
 PC FOOTER HIDE (MOBILE)
 ===================== */
-@media (max-width:768px){
 
-footer.part1,
-footer.part2{
-    display:none !important;
-    }
-}
 
 header.hide {
     transform: translateY(-100%);
@@ -1470,40 +1461,6 @@ Floating Buttons
     }
 }
 
-/* =========================
-MOBILE GLOBAL SPACING RESET
-========================= */
-@media (max-width:768px){
-
-section{
-    padding:80px 36px !important;
-}
-
-section + section{
-    margin-top:0 !important;
-}
-
-[class*="inner"],
-[class*="wrap"],
-[class*="container"]{
-    padding-left:0 !important;
-    padding-right:0 !important;
-}
-
-.swiper{
-    margin-top:24px !important;
-}
-
-ul{
-    margin:0 !important;
-    padding:0 !important;
-}
-
-.go-item,
-.go-inter{
-    margin-top:16px !important;
-}
-}
 
 .best-item .go-item{
     display:inline-flex;
@@ -1653,3 +1610,60 @@ body {
 }
 }
 
+@media (max-width:768px){
+.season-collection .left img{
+    max-width:85%;
+}
+}
+
+*{
+  box-sizing:border-box;
+}
+
+
+
+.season-collection{
+  width:100%;
+}
+
+.season-collection .season-inner{
+  max-width:1400px;
+  margin:0 auto;
+  padding:0 40px;
+}
+
+.season-collection .wrap{
+  display:flex;
+  gap:60px;
+}
+
+.season-collection .left img{
+  width:100%;
+  max-width:680px;
+}
+
+.season-collection .text{
+  text-align:center;
+}
+
+
+
+.season-collection .season-inner{
+  max-width:1400px;
+  margin:0 auto;
+  padding:0 40px;
+}
+
+.season-collection .wrap{
+  display:flex;
+  gap:60px;
+}
+
+.season-collection .left img{
+  width:100%;
+  max-width:680px;
+}
+
+.season-collection .text{
+  text-align:center;
+}
