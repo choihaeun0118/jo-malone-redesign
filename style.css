@@ -34,7 +34,7 @@ div.slogun a{
     display: flex;
     justify-content: space-between;
     gap: 160px;
-    padding: 62px 130px 68px;
+    padding: 35px 130px 35px;
     position: relative;
 }
 .hader-inner #search-form{
@@ -97,7 +97,7 @@ nav{
     justify-content: space-between;
     font-size: clamp(0.5rem, 0.3684rem + 0.5263vw, 1rem);
     margin: 0px 450px;
-    padding: 32px 0px 36px;
+    padding: 20px 0px 20px;
 }
 /* 메가메뉴 */
 .mega-menu {
@@ -831,7 +831,7 @@ height:4px;
     display:flex;
     align-items:center;
     gap:10px;
-    margin-left: 13%;           
+    margin-left: 8%;           
 }
 
 .product-items .swiper-slide{
@@ -1122,7 +1122,6 @@ section.Jomalone-service{
 }
 .Jomalone-service li img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
     margin-bottom: 50px;
 }
@@ -1386,7 +1385,7 @@ mega menu hover buffer
 }
 .mega-menu {
     position: fixed;              
-    top: 280px;                 
+    top: 201px;                 
     left: 0;
     width: 100vw;
     background: #fdfaf0;
@@ -1545,7 +1544,7 @@ Main Visual Dim Overlay
     content: "";
     position: absolute;
     left: 50%;
-    bottom:-25px;
+    bottom:3px;
     width: 0;
     height: 3px;              
     background: #292929;
