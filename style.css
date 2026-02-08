@@ -96,7 +96,7 @@ nav{
     display: flex;
     justify-content: space-between;
     font-size: clamp(0.5rem, 0.3684rem + 0.5263vw, 1rem);
-    margin: 0px 450px;
+    margin: 0px 440px;
     padding: 20px 0px 20px;
 }
 /* 메가메뉴 */
@@ -1766,7 +1766,6 @@ Mobile – part2 숨김
 
 header .gnb > li > a{
   font-size: 15px;   /* 기존 -1~2px */
-  padding: 0 18px;
 }
 
 .mega-menu{
