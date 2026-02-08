@@ -516,7 +516,7 @@ Mobile Header Login Icon
 ================================ */
 .best-item .dot-pager{
     position:absolute;
-    top:175px;
+    top:65px;
     left:96%;
     height: 30px;
     transform:translateX(-50%);
@@ -740,7 +740,7 @@ season-collection mobile
 @media (max-width: 768px){
 
 .season-collection{
-padding:150px 0;
+padding-top: 150px;
 }
 
 .season-collection .season-inner{
@@ -900,7 +900,7 @@ product-items mobile
 @media (max-width: 768px){
 
 .product-items{
-padding:50px 0;
+padding:50px 0px 50px ;
 }
 
 .product-items .swiper{
@@ -1163,7 +1163,7 @@ section.Jomalone-service{
 
 .Jomalone-service li h1{
     font-size: 32px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
     font-weight: 500;
 }
 
@@ -1545,7 +1545,7 @@ Main Visual Dim Overlay
     content: "";
     position: absolute;
     left: 50%;
-    bottom:-2px;
+    bottom:-25px;
     width: 0;
     height: 3px;              
     background: #292929;
@@ -1764,3 +1764,95 @@ Mobile – part2 숨김
     display: none;
   }
 }
+
+header .gnb > li > a{
+  font-size: 15px;   /* 기존 -1~2px */
+  padding: 0 18px;
+}
+
+.mega-menu{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+.category.has-mega:hover .mega-menu{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.best-item .size,
+.season-inner{
+  transform: scale(0.8);
+  transform-origin: center;
+}
+
+.best-item,
+.season-collection{
+  margin-top: -80px;
+}
+
+.product-items .swiper{
+  padding-left: 0;
+}
+
+.exclusive-inner{
+  transform: scale(0.85);
+  transform-origin: center;
+}
+
+.Jomalone-service .img-wrap img{
+  width: 100%;
+  aspect-ratio: 4 / 3;   /* 직사각형 답답함 제거 */
+  object-fit: cover;
+}
+
+
+
+/* 모바일 수정 */
+@media (max-width:768px){
+.season-pagination{
+  margin-top: 8px;
+
+}
+}
+
+@media (max-width:768px){
+.best-item .size,
+.season-inner,
+.exclusive-inner{
+  transform: scale(1.0);
+  transform-origin: center;
+  
+}
+}
+
+@media (max-width:768px){
+
+.best-item .size{
+    margin-top: 100px;
+}
+}
+@media (max-width:768px){
+.season-pagination{
+  margin-top: 8px;
+}
+}
+
+@media (max-width:768px){
+.Jomalone-service .go-item{
+  margin-bottom: 14px;
+}
+}
+
+.m-footer-sns{
+  display: flex !important;
+  visibility: visible;
+}
+
+header .gnb > li{
+  position: relative;
+}
+
